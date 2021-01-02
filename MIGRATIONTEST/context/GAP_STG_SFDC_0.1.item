@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_-v_FUE0KEeuiAPYAKiDHYw">
+    <contextParameter comment="" name="GAP_STG_SFDC_AdditionalParams" prompt="GAP_STG_SFDC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_-v_FUU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Password" prompt="GAP_STG_SFDC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Di4nJXi/Mao/rRqvDzZls4sgSGbc65gj/X5UZ01LPodB2tof6bxd" xmi:id="_-v_FUk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Schema" prompt="GAP_STG_SFDC_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_-v_FU00KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Server" prompt="GAP_STG_SFDC_Server?" promptNeeded="false" type="id_String" value="USE1CRESTGSQL01.corplan.net" xmi:id="_-v_FVE0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Login" prompt="GAP_STG_SFDC_Login?" promptNeeded="false" type="id_String" value="GirikonUser" xmi:id="_-v_FVU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Database" prompt="GAP_STG_SFDC_Database?" promptNeeded="false" type="id_String" value="GAP_DEV_SFDC" xmi:id="_-v_FVk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Port" prompt="GAP_STG_SFDC_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_-v_FV00KEeuiAPYAKiDHYw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Server" xmi:id="_-v_FWE0KEeuiAPYAKiDHYw">
+    <contextParameter comment="" name="GAP_STG_SFDC_AdditionalParams" prompt="GAP_STG_SFDC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_-v_FWU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Password" prompt="GAP_STG_SFDC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:PjwbU0dnCHAkW6X4KC7PbBB5UHjgJh57Hm4e3sOWpad+PT1x" xmi:id="_-v_FWk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Schema" prompt="GAP_STG_SFDC_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_-v_FW00KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Server" prompt="GAP_STG_SFDC_Server?" promptNeeded="false" type="id_String" value="USE1CRESTGSQL01.corplan.net" xmi:id="_-v_FXE0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Login" prompt="GAP_STG_SFDC_Login?" promptNeeded="false" type="id_String" value="GirikonUser" xmi:id="_-v_FXU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Database" prompt="GAP_STG_SFDC_Database?" promptNeeded="false" type="id_String" value="GAP_STG_SFDC" xmi:id="_-v_FXk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Port" prompt="GAP_STG_SFDC_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_-v_FX00KEeuiAPYAKiDHYw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="STG" xmi:id="_-v_FYE0KEeuiAPYAKiDHYw">
+    <contextParameter comment="" name="GAP_STG_SFDC_AdditionalParams" prompt="GAP_STG_SFDC_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_-v_FYU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Password" prompt="GAP_STG_SFDC_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:LbG/qRmyxjv6MdiuyfnzhfTvJ3jbC3quxnj5zAQ3HsS57WcX" xmi:id="_-v_FYk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Schema" prompt="GAP_STG_SFDC_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_-v_FY00KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Server" prompt="GAP_STG_SFDC_Server?" promptNeeded="false" type="id_String" value="USE1CRESTGSQL01.corplan.net" xmi:id="_-v_FZE0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Login" prompt="GAP_STG_SFDC_Login?" promptNeeded="false" type="id_String" value="GirikonUser" xmi:id="_-v_FZU0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Database" prompt="GAP_STG_SFDC_Database?" promptNeeded="false" type="id_String" value="GAP_STG_SFDC" xmi:id="_-v_FZk0KEeuiAPYAKiDHYw"/>
+    <contextParameter comment="" name="GAP_STG_SFDC_Port" prompt="GAP_STG_SFDC_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_-v_FZ00KEeuiAPYAKiDHYw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b760e071-8f25-40a7-96eb-0da08539cd90"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GROsFEfX+rGhe4YtdYxCbL7dfsGqhAmCrvAm2rp2JEf8oMz6d5nva1INDL0xmW8ZsjDEwIJu/bt/&#13;
+WKNhEtDwNw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6d9bed1d-0587-433b-8906-5e0c4e80c7e7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v020TE5b6GU0ccVuvC2Z7A2aMX+SlJ5EVq+MZcvCG9kPKYZil5gAXpWOlREQ1TnSHB6Fh6GE2meE&#13;
+G1Fq05Tqnw==</DigestValue></Reference></SignedInfo><SignatureValue>ob3Gv66/H721GE7XMHS6V1NRzzQI3H+sJWLMg2uCq8BisBDL7uYHnmcszm6DdQnBbSq6C/7KaJxN&#13;
+UEhTMa/5q+RwqPdkzTAnCPjO58MYq8VdlAg/4W3ORax+go2BD1qE/oroMoaqkNGnV2K7WGE8cFZe&#13;
+EzJ6kAQPXgjNhltqifdpDbEOVFIKKXYO4kP6AG9NTWSMduQM6SvAoCSPEZGGyO1h3rmymKoGXFXU&#13;
+ahsUi/7JWttW2ELaG2R6mW4u8qAORQ8xBm+cxO3QnMaWeumetSHmXIXVeWcH6QtKhwB43cjWffcQ&#13;
+rG6oCQ5sarFHINKxZgiMFwsPAJDUA8IGxCg2YQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6d9bed1d-0587-433b-8906-5e0c4e80c7e7" Target="#_b760e071-8f25-40a7-96eb-0da08539cd90"><Timestamp>2021-01-02 14:58:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

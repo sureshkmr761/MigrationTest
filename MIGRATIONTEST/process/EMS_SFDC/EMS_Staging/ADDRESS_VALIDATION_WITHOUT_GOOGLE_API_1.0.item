@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_DEV_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:+onI0QMpCZ5nAUwk794/6iAz0OqfBW+1TdBl8U321l+mWv/bysRZ"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:UnDJm+yXhQ7jc3k09//sTyyHNe/wRpYXGEg3J1djyfUv0bAODas+"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="UBK_TOC_01"/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/EMS/context/"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;Sandbox&quot;"/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;X&quot;"/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/lookup/"/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/process/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:Z5bNa1TBf7pasM3nIywqzGU/MrxpopouzAmFQvwXC5ezlJprcp4="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_DEV_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:ZBOdHlRe0TSFFqakac+4A4HSvnJeMwZjvHJIfh0bTwSjDuUi64m+"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:d99u1vcFFBPeT6dV7ecB86D9q6BVppyK36fbf/1pMC2zW/Lt05OR"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/processing/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:pyIk1ZCHCMZDMRHAH9mEdRfYlmXhCh07XTddoMeKsdHR7W/0CK0="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_DEV_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:+GZy6WQguvz+ENrATqAAxNqg8SU8q2LQ9Xn13evYagnClbAwlhQS"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:XGbplgtudsqK4jgPnlcT8eXJwPjNgkwyCS25+vHtMKAuuGP6R5sq"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/gap/staging/girikon/EMS/Context/"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/processing/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:vdZqhSEVvMZnRqyirNiR1t8b67gHVW120Qa2ELC1a96nz12+Rus="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_DEV_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:3jnP5EWEx+kHderhioayyrNfb0lvJj3Q5BfTOWKNIITgwiqtUMBG"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:Ghh3AOT54h3KmhmxWYc31AcTwfgOdAVOloQPMxdnF2gdyPYQXDeP"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/gap/staging/girikon/EMS/Context/"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/processing/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="/opt/data/ws1/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:78dJsgaSr13P9P+puwSeaxxFoLPbwAdObGjcvACRsh4xS3Ygv1s="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="Server">
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:5k269EOZBLooq7BFwz3TYFhtHRyPgSgu6ES7A1ZP/pEQOrKC9G84"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="UBK_TOC_01"/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/EMS/context/"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;Sandbox&quot;"/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;X&quot;"/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/lookup/"/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/process/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:a+FJ4pjUqif0ygjPfNxtCYC9RMMkQ8tyuCnf2Gx9JFU0qOuXBTQ="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:BFekBz4k6v3cPd8n4GXjX9lb9NVc+l+aD37NnS7c/TNcm+Od"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_STG_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+  </context>
+  <context confirmationNeeded="false" name="STG">
+    <contextParameter comment="" name="EMS_CORE_AdditionalParams" prompt="EMS_CORE_AdditionalParams?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value=""/>
+    <contextParameter comment="" name="EMS_CORE_Database" prompt="EMS_CORE_Database?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="EMS_Core"/>
+    <contextParameter comment="" name="EMS_CORE_Login" prompt="EMS_CORE_Login?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="EMS_CORE_Password" prompt="EMS_CORE_Password?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_Password" value="enc:system.encryption.key.v1:7habXR0QA+tT8sro2Nv+JH0bj9S7LGyMbKGzl2SHqQmp0cw421G1"/>
+    <contextParameter comment="" name="EMS_CORE_Port" prompt="EMS_CORE_Port?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="EMS_CORE_Schema" prompt="EMS_CORE_Schema?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="EMS_CORE_Server" prompt="EMS_CORE_Server?" promptNeeded="false" repositoryContextId="_OxcgUJEaEeq85-00Dd3RzA" type="id_String" value="ge-prd-etlsql01.corplan.net"/>
+    <contextParameter comment="" name="BatchCode" prompt="BatchCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="UBK_TOC_01"/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/EMS/context/"/>
+    <contextParameter comment="" name="Environment" prompt="Environment?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;Sandbox&quot;"/>
+    <contextParameter comment="" name="ErrorFolder" prompt="ErrorFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/error/"/>
+    <contextParameter comment="" name="EventEditionCode" prompt="EventEditionCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="EventType" prompt="EventType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName" prompt="FileName?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="FileName2" prompt="FileName2?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="Flag" prompt="Flag?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="&quot;X&quot;"/>
+    <contextParameter comment="" name="LastProcessDate" prompt="LastProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ListOfEvents" prompt="ListOfEvents?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="LogFolder" prompt="LogFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/log/"/>
+    <contextParameter comment="" name="LookupFloder" prompt="LookupFloder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/lookup/"/>
+    <contextParameter comment="" name="MDMeventeditioncode" prompt="MDMeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="OrganisationCode" prompt="OrganisationCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessDate" prompt="ProcessDate?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="ProcessFolder" prompt="ProcessFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/process/"/>
+    <contextParameter comment="" name="recordType" prompt="recordType?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="RootFolder" prompt="RootFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/"/>
+    <contextParameter comment="" name="SourceFolder" prompt="SourceFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/source/"/>
+    <contextParameter comment="" name="SourceSystem" prompt="SourceSystem?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SourceSystemCode" prompt="SourceSystemCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SrcCode" prompt="SrcCode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="SRCeventeditioncode" prompt="SRCeventeditioncode?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value=""/>
+    <contextParameter comment="" name="TempFolder" prompt="TempFolder?" promptNeeded="false" repositoryContextId="_XSD4QO92EeahZKKxTXzEZg" type="id_String" value="D:/workInProgress/TalendExecutionServer/AEM/temp/"/>
+    <contextParameter comment="" name="SqlServer_AdditionalParams" prompt="SqlServer_AdditionalParams?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SqlServer_Database" prompt="SqlServer_Database?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="Informa_PROD_0975162215"/>
+    <contextParameter comment="" name="SqlServer_Host" prompt="SqlServer_Host?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="SqlServer_Login" prompt="SqlServer_Login?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="SqlServer_Password" prompt="SqlServer_Password?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_Password" value="enc:system.encryption.key.v1:1nKyAvavE72o3VgzWDzV9WNB1o50rwCySYzHzzri0nt7tPCdD18="/>
+    <contextParameter comment="" name="SqlServer_Port" prompt="SqlServer_Port?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="SqlServer_Schema" prompt="SqlServer_Schema?" promptNeeded="false" repositoryContextId="_ZQsK4MtVEeavvYjg161eNQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_AdditionalParams" prompt="API_STG_SERVER_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value=""/>
+    <contextParameter comment="" name="API_STG_SERVER_Password" prompt="API_STG_SERVER_Password?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_Password" value="enc:system.encryption.key.v1:vkEPxl8OHDcPRFbNG+EN00BqFiSi7OOgeYmPqAKYV3+5Lrj1"/>
+    <contextParameter comment="" name="API_STG_SERVER_Schema" prompt="API_STG_SERVER_Schema?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="API_STG_SERVER_Server" prompt="API_STG_SERVER_Server?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="USE1CRESTGSQL01.corplan.net"/>
+    <contextParameter comment="" name="API_STG_SERVER_Login" prompt="API_STG_SERVER_Login?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GirikonUser"/>
+    <contextParameter comment="" name="API_STG_SERVER_Database" prompt="API_STG_SERVER_Database?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="GAP_STG_SFDC"/>
+    <contextParameter comment="" name="API_STG_SERVER_Port" prompt="API_STG_SERVER_Port?" promptNeeded="false" repositoryContextId="_Ofv4MDT_EemRZOZjnrXGdQ" type="id_String" value="1433"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="320"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7v0OYs7Hs3jNptRgne0bGUT4yq4LuM8jT8Lkk8ZF"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend7.1/Talend-Studio-20181026_1147-V7.1.1/Talend-Studio-20181026_1147-V7.1.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:L7e6rWDTWfVWVH/zlUTdcrZ/tW77MlY51HhagHif"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_p7O3wMzIEeq87_WTdE371A" name="DQTechnical"/>
+    <routinesParameter id="_p69K8MzIEeq87_WTdE371A" name="DataMasking"/>
+    <routinesParameter id="_p7TwQMzIEeq87_WTdE371A" name="DataOperation"/>
+    <routinesParameter id="_p7GU4MzIEeq87_WTdE371A" name="DataQualityDependencies"/>
+    <routinesParameter id="_p7BcYMzIEeq87_WTdE371A" name="DataQuality"/>
+    <routinesParameter id="_p7LNYMzIEeq87_WTdE371A" name="DqStringHandling"/>
+    <routinesParameter id="_p2AZgMzIEeq87_WTdE371A" name="MDM"/>
+    <routinesParameter id="_p7XaoMzIEeq87_WTdE371A" name="Mathematical"/>
+    <routinesParameter id="_p7bFAMzIEeq87_WTdE371A" name="Numeric"/>
+    <routinesParameter id="_p7fWcMzIEeq87_WTdE371A" name="Relational"/>
+    <routinesParameter id="_p77bUMzIEeq87_WTdE371A" name="SQLike"/>
+    <routinesParameter id="_p7jn4MzIEeq87_WTdE371A" name="StringHandling"/>
+    <routinesParameter id="_p7pugMzIEeq87_WTdE371A" name="TalendDataGenerator"/>
+    <routinesParameter id="_p7t_8MzIEeq87_WTdE371A" name="TalendDate"/>
+    <routinesParameter id="_p7yRYMzIEeq87_WTdE371A" name="TalendString"/>
+    <routinesParameter id="_p72i0MzIEeq87_WTdE371A" name="TalendStringUtil"/>
+    <routinesParameter id="_VXjqMA4REee5OvVaLkwvvA" name="GirikonQueryBuilder"/>
+    <routinesParameter id="_NtO3UMj7EeavvYjg161eNQ" name="GirikonUtil"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.contextFilePath=&quot;D:/workInProgress/TalendExecutionServer/SALESLOGIX/context/informa_ems.properties&quot;;&#10;//context.contextFilePath=&quot;D:/workInProgress/TalendExecutionServer/CLEANUP/context/informa_ubkdatasync.propertie&quot;;&#10;&#10;String foo = &quot;bar&quot;;&#10;&#10;System.out.println(&quot;Running &quot;+jobName+&quot; ...&quot;);&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_6"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.contextFilePath"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;=&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" show="false" value="&quot;D:/Users/TanejaPu/workspace6&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" show="false" value="10"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" show="false" value=""/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="contextFile"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_6">
+      <column comment="" key="false" length="-1" name="key" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="key" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tContextLoad_1"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.API_STG_SERVER_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.API_STG_SERVER_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.API_STG_SERVER_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.API_STG_SERVER_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.API_STG_SERVER_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+t8ADDNPlmzQpt0G9S8BlPdONFJV6iymnYmZMPoM+qtK88E4M1NFH0vIa8jZ0Uvaz8qQgwVGTaWSZkc="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Contact&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id, LegacyContactID, MailingStreet, MailingCity, MailingState, MailingCountry, MailingPostalCode&#13;&#10;FROM Contact where BatchCode='EMS_LD_1' and MailingStreet is not null&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.API_STG_SERVER_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LegacyContactID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MailingStreet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MailingCity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MailingState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MailingCountry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MailingPostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Contact"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9-t9cNf7Eeq7wam2k54FHA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Organization" name="out1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row22.id " name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row22.LegacyContactID " name="LegacyContactID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingStreet " name="MailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingStreet " name="VerifiedStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingCity " name="MailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingState " name="MailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingCountry " name="MailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row22.MailingPostalCode " name="MailingPostalCode" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row22" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LegacyContactID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingPostalCode" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplace_5"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" show="false" value="Simple mode works with regex expression(in last version)"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Trl &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Trail &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Trl. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Trail &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ter &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Terrace &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ter. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Terrace &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Sq &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Square &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Sq. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Square &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pl &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Place &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pl. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Place &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ext &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Extension &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ext. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Extension &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ctr &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Center &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ctr. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Center &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Br &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Branch &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Br. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Branch &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Cir &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Circle &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Cir. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Circle &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ct &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Court &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ct. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Court &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Hwy &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Highway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Hwy. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Highway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ln &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Lane &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ln. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Lane &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pkwy &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Parkway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pkwy. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Parkway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Blvd &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Boulevard &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Blvd. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Boulevard &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mtn &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mountain &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ave &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Avenue &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ave. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Avenue &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ste &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Suite &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ste. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Suite &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; P.O. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; PO &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Po &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; PO &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;P.O.&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;PO&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;P. O.&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;PO&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Rd &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Road &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Rd. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Road &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr.,&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive ,&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Organization" name="tReplace_5">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9-t9cNf7Eeq7wam2k54FHA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.VerifiedStreet != null &amp;&amp; row1.VerifiedStreet.contains(&quot;Box&quot;)? GirikonUtil.POBoxAddressFix(row1.VerifiedStreet):row1.VerifiedStreet " name="StreetAddress" type="id_String"/>
+        <mapperTableEntries expression="Var.StreetAddress.contains(&quot;~&quot;)?Var.StreetAddress.split(&quot;~&quot;)[0]:Var.StreetAddress " name="Street1" type="id_String"/>
+        <mapperTableEntries expression="Var.StreetAddress.contains(&quot;~&quot;)?Var.StreetAddress.split(&quot;~&quot;)[1]:null " name="Street2" nullable="true" type="id_String"/>
+      </varTables>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.LegacyContactID" name="LegacyContactID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street1.contains(&quot;PO Box&quot;)&amp;&amp; !GirikonUtil.isFieldBlank(Var.Street2)?StringHandling.TRIM(Var.Street2): StringHandling.TRIM(Var.Street1) " name="VerifiedMailingStreet" type="id_String"/>
+        <mapperTableEntries expression="Var.Street1.contains(&quot;PO Box&quot;)&amp;&amp; !GirikonUtil.isFieldBlank(Var.Street2)? StringHandling.TRIM(Var.Street1): StringHandling.TRIM(Var.Street2) " name="OtherMailingStreet" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row1.MailingCity " name="Other_MailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row1.MailingState " name="Other_MailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row1.MailingCountry " name="Other_MailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row1.MailingPostalCode " name="Other_MailingPostalCode" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LegacyContactID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VerifiedStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MailingPostalCode" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.API_STG_SERVER_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.API_STG_SERVER_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.API_STG_SERVER_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.API_STG_SERVER_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.API_STG_SERVER_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/a5fJduQL4iCQNYiRHpWtucE6hGyfcnOUMgLCDRlZZ066sq9BBdFFPAeUB4YhDE+MkmrAZrHgcOcwuY="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Contact&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="id"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.API_STG_SERVER_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LegacyContactID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VerifiedMailingStreet"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OtherMailingStreet"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_MailingCity"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_MailingState"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_MailingCountry"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_MailingPostalCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Contact"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyContactID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherMailingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_MailingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.API_STG_SERVER_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.API_STG_SERVER_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.API_STG_SERVER_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.API_STG_SERVER_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.API_STG_SERVER_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GXzOjR0cDmzxucVmtWun+Rcpst8VQQs+Lu1j/QdSxWDfOTFb4tulkpM/iNQZF6paZDdLygPYzZnTw5U="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Account&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id, LegacyAccountId, BillingStreet, BillingCity, BillingState, BillingCountry, BillingPostalCode&#13;&#10;FROM Account where BatchCode='EMS_LD_1' and BillingStreet is not null &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.API_STG_SERVER_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LegacyAccountId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingState"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Account"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Organization" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9-t9cNf7Eeq7wam2k54FHA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Organization" name="out3">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out3" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.id " name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.LegacyAccountId " name="LegacyAccountId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingStreet " name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingStreet " name="VerifiedStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingCity " name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingState " name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingCountry " name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.BillingPostalCode " name="BillingPostalCode" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LegacyAccountId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingPostalCode" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tReplace" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tReplace_1"/>
+    <elementParameter field="CHECK" name="SIMPLE_MODE" value="true"/>
+    <elementParameter field="LABEL" name="SIMPLEMODE_OLDLABLE" show="false" value="Simple mode works with regex expression(in last version)"/>
+    <elementParameter field="TABLE" name="SUBSTITUTIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Trl &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Trail &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Trl. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Trail &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ter &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Terrace &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ter. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Terrace &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Sq &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Square &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Sq. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Square &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pl &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Place &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pl. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Place &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ext &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Extension &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ext. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Extension &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ctr &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Center &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ctr. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Center &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Br &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Branch &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Br. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Branch &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Cir &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Circle &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Cir. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Circle &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mt. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mount &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ct &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Court &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ct. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Court &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Hwy &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Highway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Hwy. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Highway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ln &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Lane &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ln. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Lane &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pkwy &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Parkway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Pkwy. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Parkway &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Blvd &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Boulevard &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Blvd. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Boulevard &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Mtn &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Mountain &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ave &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Avenue &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ave. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Avenue &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ste &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Suite &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Ste. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Suite &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; P.O. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; PO &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Po &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; PO &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;P.O.&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;PO&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot;P. O.&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot;PO&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Rd &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Road &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Rd. &quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Road &quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+      <elementValue elementRef="INPUT_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="SEARCH_PATTERN" value="&quot; Dr.,&quot;"/>
+      <elementValue elementRef="REPLACE_STRING" value="&quot; Drive ,&quot;"/>
+      <elementValue elementRef="WHOLE_WORD" value="false"/>
+      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
+      <elementValue elementRef="USE_GLOB" value="false"/>
+      <elementValue elementRef="COMMENT" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="STRICT_MATCH" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ADVANCED_MODE" value="false"/>
+    <elementParameter field="TABLE" name="ADVANCED_SUBST" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Organization" name="tReplace_1">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedStreet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_9-t9cNf7Eeq7wam2k54FHA-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out4">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedBillingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.VerifiedStreet != null &amp;&amp; row3.VerifiedStreet.contains(&quot;Box&quot;)? GirikonUtil.POBoxAddressFix(row3.VerifiedStreet):row3.VerifiedStreet " name="StreetAddress" type="id_String"/>
+        <mapperTableEntries expression="Var.StreetAddress.contains(&quot;~&quot;)?Var.StreetAddress.split(&quot;~&quot;)[0]:Var.StreetAddress " name="Street1" type="id_String"/>
+        <mapperTableEntries expression="Var.StreetAddress.contains(&quot;~&quot;)?Var.StreetAddress.split(&quot;~&quot;)[1]:null " name="Street2" nullable="true" type="id_String"/>
+      </varTables>
+      <outputTables name="out4" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.id " name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row3.LegacyAccountId " name="LegacyAccountId" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street1.contains(&quot;PO Box&quot;)&amp;&amp; !GirikonUtil.isFieldBlank(Var.Street2)?StringHandling.TRIM(Var.Street2): StringHandling.TRIM(Var.Street1) " name="VerifiedBillingStreet" type="id_String"/>
+        <mapperTableEntries expression="Var.Street1.contains(&quot;PO Box&quot;)&amp;&amp; !GirikonUtil.isFieldBlank(Var.Street2)? StringHandling.TRIM(Var.Street1): StringHandling.TRIM(Var.Street2) " name="OtherStreet" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row3.BillingCity " name="Other_BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row3.BillingState " name="Other_BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row3.BillingCountry " name="Other_BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.Street2==null?null:row3.BillingPostalCode " name="OtherPostalCode" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="LegacyAccountId" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VerifiedStreet" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCity" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingState" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingCountry" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BillingPostalCode" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.API_STG_SERVER_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.API_STG_SERVER_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.API_STG_SERVER_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.API_STG_SERVER_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.API_STG_SERVER_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o6h4tr9g65f4yx4BuF7G7KlTkNP6/S9/IV83F0EqllMLx3Ak7iLDdVydo+ZTi1onk5HZPIPIktZI5mw="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Account&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="id"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.API_STG_SERVER_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LegacyAccountId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VerifiedBillingStreet"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OtherStreet"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_BillingCity"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_BillingState"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_BillingCountry"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OtherPostalCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="Account"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_2">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedBillingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LegacyAccountId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VerifiedBillingStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherStreet" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCity" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Other_BillingCountry" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherPostalCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_2" offsetLabelX="0" offsetLabelY="0" source="tPrejob_2" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tFileInputDelimited_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tFileInputDelimited_6" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_6" target="tContextLoad_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
+  </connection>
+  <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row22"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tReplace_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TollFree"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fax"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tReplace_5" offsetLabelX="0" offsetLabelY="0" source="tReplace_5" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="VerifiedMailingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tReplace_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MailingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TollFree"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fax"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LegacyAccountId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VerifiedStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingPostalCode"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BillingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tReplace_1" offsetLabelX="0" offsetLabelY="0" source="tReplace_1" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="LegacyAccountId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Other_BillingCountry"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VerifiedBillingStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Other_BillingCity"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Other_BillingState"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OtherStreet"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="COLLAPSED" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Contact Validation"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Account Validation"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9df29c07-dfbc-4d6a-93f0-4ebe8a52ff62"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o3OLnmqVk6zgDXNYyLrd8zScVclMjR6y8uaJHQP8GBQd5QWX4n0Iz/Klet7v+WMY6a0PmxOmVP+q&#13;
+c5KcGTKTsQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_12591c22-3f6d-4512-b4f2-a70bda4ee5c1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9WKUL67BseOr5CGrvt0IsBl4kzdmY4zwyAws4xDtu0UT5O3NyijjY4r/BDEyf+GXJWAKYqPWSuRr&#13;
+ygImDjq+dw==</DigestValue></Reference></SignedInfo><SignatureValue>SyyVIPPTZsxx2LpXFRIZS60r3+kUweAtnWDbaqFKUfVwKPDAJ6YD8RAJ9+PAAF4/l8H6jaVdgZVI&#13;
+2T+k0cqXrAuql8VxpvHpeQki57jSGTM98kx51kAS3S70Dnr3PWOiCjFStVnZk3RUNbLktHRV7tcx&#13;
+nwf6kSKQMDg+zQKv49BxrSCkAczMcxFChLFImlHDURZmxSB/P6O8b6Uedcx+NtGffFqNDpzazTJm&#13;
+dtpWJuu9m7n+U5QK7Jp54q8CGhm8ttOUEOxlS4raO9Qr7o+yscCEkdlyzkHkBKrnVv2glUmQviyf&#13;
+JlUfF+bRi4dQSQduDuvQrGw0G8kh5y6fRY43Ug==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_12591c22-3f6d-4512-b4f2-a70bda4ee5c1" Target="#_9df29c07-dfbc-4d6a-93f0-4ebe8a52ff62"><Timestamp>2021-01-02 14:59:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

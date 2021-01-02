@@ -1,0 +1,613 @@
+package routines;
+
+import java.text.ParseException;
+import java.util.Date;
+
+import javax.swing.text.MaskFormatter;
+
+//import org.hamcrest.core.IsNull;
+
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class GirikonUtil {
+
+    public static Boolean isFieldBlank(String value)
+    {
+    	value=StringHandling.TRIM(value);
+    	if(value==null||value.equals("")||value.isEmpty()||value.length()==0)
+    		return true;
+    	else
+    		return false;
+    }
+    public static Integer getMaxNumber(Integer maxId)
+    {
+    	if(maxId == null||maxId==0)
+    	return 1;
+    	else 
+    		return maxId+1;
+    	
+    }
+    public static Date getEventStartDate(Integer startdate)
+    {
+    	if(startdate==null)
+    		return null;
+    	String startdatevalue = startdate+"";
+    	String datevalue;
+    
+    			if(startdatevalue.substring(0, 1).equals("0"))
+    				datevalue="19"+startdatevalue.substring(1, 3)+startdatevalue.substring(3, 5)+startdatevalue.substring(5, 7);
+    			else
+    				datevalue="20"+startdatevalue.substring(1, 3)+startdatevalue.substring(3, 5)+startdatevalue.substring(5, 7);
+    			
+    			
+    			return TalendDate.parseDate("yyyyMMdd", datevalue);
+    }
+    public static String getEventYear(Integer startdate)
+    {
+    	if(startdate==null)
+    		return null;
+    	String startdatevalue = startdate+"";
+    	String year;
+    
+    			if(startdatevalue.substring(0, 1).equals("0"))
+    				year="19"+startdatevalue.substring(1, 3);
+    			else
+    				year="20"+startdatevalue.substring(1, 3);
+    			
+    			
+    			return year;
+    }
+    public static String getProductClass(String rclass )
+    {
+    	if(isFieldBlank(rclass))
+    		return "";
+    	String productFamily;
+    	switch(rclass){
+    	case "1": productFamily="Space Rental";
+    			break;
+    	case "2": productFamily="Equipment";
+				break;
+    	case "3": productFamily="Consumables";
+				break;
+    	case "4": productFamily="Telecommunications";
+				break;
+    	case "5": productFamily="Labor";
+    			break;
+    	case "6": productFamily="Statistics";
+				break;
+    	case "7": productFamily="Vendors";
+    			break;
+    	case "8": productFamily="Taxes, Gratuities and Add-Ons";
+				break;
+    	case "9": productFamily="Payment Plans";
+    			break;
+		default : productFamily="NA";
+				break;
+    	}
+    	 
+    	return productFamily;
+    }
+    public static Boolean getContactRecord(String classtype, String source)
+    {
+    	if(isFieldBlank(classtype))
+    		classtype="P";
+    	
+    	if(source.equals("UBK") && classtype.equals("P"))
+    	return true;
+    	else if(!source.equals("UBK"))
+    		return true;
+    	else 
+    		return false;
+    }
+    
+    public static String  truncateTitle(String Title,String Body)
+    {
+		    	
+		    	int len;
+		    	len=Title.length();
+		    	
+		    	if(len<1)
+		    	{
+		    		if (Body.length()>50)
+		    			return Body.substring(0,50);
+		    		else
+		    			return Body;
+		    	}
+		    	
+		    	
+		    	if (len>80)
+		    	{
+		    		return Title.substring(0,80);
+		    	}
+		    	else 
+		    	{
+		    		return Title;
+		    			
+		    	}
+    }
+    	
+   
+    public static String getSubject(String Title,String Body)
+    {
+    		int index;
+    		int len=0;
+    		int Minlen=100;
+    		if(Body.length()>Minlen)
+    		{
+    			len=Minlen;
+    		}
+    		else
+    		{
+    			len=Body.length();
+    		}
+    	 if (Title.trim().length()>0)
+    	 {
+    		return Title; 
+    	 }
+    	 else
+    	 {
+    		 index=Body.indexOf(".");
+    		 if (index==-1)
+	    		 {
+    			 		Body=Body.substring(0,len);
+    			 		return Body;
+	    		 }
+    		 else
+    		 {
+    			 if (index<10)
+    			 {
+    				index=Body.indexOf(".",10) ;
+    				if (index!=-1 )
+    					if(index>=len)
+    						return Body.substring(0,len);
+    					else
+    						return Body.substring(0,index);
+    				    				   				
+    				else
+    						return Body.substring(0,len);
+    			 }
+    			 else
+    			 {
+    				 if(index>=len)
+ 						return Body.substring(0,len);
+ 					else
+ 						return Body.substring(0,index);
+    			
+    			 }
+    		 }
+    	 
+    	 
+    	 
+    	 }
+    	
+    	
+    	
+    }
+
+
+    public static String SplitText(String Title,String Identifier)
+    {
+    	String[] s;
+    	String value;
+    	
+    	if (Title.contains(Identifier))
+    	{
+    		s=Title.split(Identifier);
+    		value=s[0];
+    	}
+    	else
+    	{
+    	value=Title;	
+    	}
+    	
+    	return value;
+    	
+    	
+    	
+    }
+    
+    
+   public static String validateName(String Name)
+   
+   {
+	   if(Name==null || Name.trim().length()==0)	   {
+		   return("Invald");
+	   }
+	   
+	   Name=Name.trim();
+	    //if (Name.contains(":")||Name.contains(",")||Name.contains(";")||Name.contains("[0-9]"))
+	   if (Name.matches("[\\p{L} .'-]+$"))
+	    	return ("Valid");
+	    	
+	    else
+	    	return ("Invalid");    	
+	  
+	   
+	   
+	   
+   }
+   public static String CleanName(String Name)  {
+	   if(Name==null || Name.trim().length()==0)	   {
+		   return(null);
+	   }
+	   
+	   else{
+	    	Name=Name.replaceAll("[^\\p{L} ]", "").trim();
+	    	return (Name);
+	    }
+	    	   
+	 
+	   
+   }
+   
+   
+   
+   
+public static String validatePhone_old(String Phone)
+   
+   {
+	   
+	   
+if(Phone.matches(".*[a-z].*") || Phone.length()>25 )
+	return ("Invalid");
+	else
+	    	return ("Valid");
+	    	
+	  
+	   
+	   
+	   
+   }
+public static String validatePhone(String Phone)
+{
+	
+if(Phone.matches("^\\+?[0-9. ()-]{6,25}$") && Phone.length()<25 )
+	return ("Valid");
+	else
+	    	return ("Invalid");
+
+}
+public static String EMSvalidatePhone(String Phone)
+{
+	
+if(Phone.matches("^\\+?[0-9. ()-]{6,25}$") && Phone.length()<25 )
+	return ("Valid");
+	else if (isFieldBlank(Phone)) {
+		return ("Valid");}
+			else
+				return ("Invalid");
+
+}
+
+
+public static String CleanPhone(String Phone)
+{
+	
+String CleanPhone;
+
+if(StringHandling.LEFT(Phone, 3).equals("011") || StringHandling.LEFT(Phone, 3).equals("+01")){
+	Phone=Phone.replaceFirst("011", "");
+}
+
+CleanPhone=Phone.replaceAll("[^0-9]","");
+
+return CleanPhone;
+}
+
+
+public static String FormatPhone(String Phone) throws ParseException
+{
+	
+String CleanPhone="";
+
+String prefix,PhoneNumber;
+
+CleanPhone=Phone.replaceFirst(" ", "~");
+
+prefix=CleanPhone.split("~")[0];
+PhoneNumber=CleanPhone.split("~")[1];
+
+PhoneNumber=PhoneNumber.replaceAll("[^0-9]","");
+
+
+CleanPhone=prefix+" "+PhoneNumber;
+
+
+return CleanPhone;
+}
+
+
+
+public static Boolean validateEmail(String email)
+{
+	if(isFieldBlank(email)) 
+		return false;
+	  email = email.replace("\n", "").replace("\r", ""); 
+	   
+if(email.matches("^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$") )
+
+		return true;
+	else
+		return false;	   
+}
+
+public static Boolean EMSAccvalidateEmail(String email)
+{
+	if(isFieldBlank(email)) 
+		return true;
+	  email = email.replace("\n", "").replace("\r", ""); 
+	   
+if(email.matches("^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&’*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$") )
+
+		return true;
+	else
+		return false;	   
+}
+
+
+
+public static String cleanEmail(String email)
+{
+	if(isFieldBlank(email)) 
+		return "";
+
+	email = email.replace("\n", "").replace("\r", ""); 
+	  return email; 
+
+}
+public static String cleanCommValue(String phone)
+{
+	if(isFieldBlank(phone)) 
+		return "";
+
+	phone = phone.replace("\n", "").replace("\r", ""); 
+	  return phone.trim(); 
+
+}
+
+
+public static String getNextBatchCode(String batchCode)
+{
+	
+	String nextBatchCode="";
+	String batch="";
+	Integer code;
+	
+	code=Integer.parseInt(batchCode.substring(batchCode.lastIndexOf('_') + 1));
+	if(code==1)
+		code =1;
+	else 
+		code = code+1;
+	
+	batch=batchCode.substring(0,batchCode.lastIndexOf('_')+1 );
+	nextBatchCode=batch+code;
+	return nextBatchCode;
+}
+public static String getNextBatch(String batchCode)
+{
+	String batch="";
+	batch=batchCode.substring(0,batchCode.lastIndexOf('_') );
+	return batch;
+}
+
+
+public static String appendText(String Text)
+{
+	Text=Text+".text";
+	
+	return Text;
+	
+}
+public static boolean ValidPostal(String postal) {
+    
+	boolean isNotValidPostal = false;
+	
+	if (postal == null || "".equalsIgnoreCase(postal)) {
+		isNotValidPostal = false;
+    }
+	else if(postal.length()>10) isNotValidPostal = true;
+	
+	
+    else 
+    {
+    	char[] chars = postal.toCharArray();
+    	
+    	//iterate over every character
+    	for (int i = 0; i < chars.length; i++) {
+    		char c = chars[i];
+    		//check if the character is alphanumeric or " " or "-"
+    		if (!(Character.isLetterOrDigit(c) || c==' '|| c=='-')) 
+    		{
+    			isNotValidPostal = true;
+    		}
+    	}
+    	
+    }
+	if(isNotValidPostal) return false;
+    else return true;
+	
+	
+}
+
+public static boolean ValidBillingAddress(String billingAddress) {
+	if( !Relational.ISNULL(billingAddress) && !"".equals(billingAddress) && billingAddress.length()>100)
+		{return false;}
+	else return true;
+}
+
+public static String  BillingAddress(String billingAddress,int Line) {
+	
+	String AddressLine1 = null;
+	String AddressLine2 = null;
+	String toReturn=null;
+
+	if( !Relational.ISNULL(billingAddress)&& !"".equals(billingAddress) && billingAddress.length()>25)
+	{
+		AddressLine1=billingAddress.substring(0, Math.min(billingAddress.length(), 25));
+		AddressLine2=billingAddress.substring(25, Math.min(billingAddress.length(), 100));
+		
+		if(AddressLine1.lastIndexOf('\n')>0)
+		{
+			AddressLine1=AddressLine1.substring(0, AddressLine1.lastIndexOf('\n'));
+			AddressLine2=billingAddress.substring(AddressLine1.length()+1, Math.min(billingAddress.length(), 100));
+			
+		}
+		else if(AddressLine1.lastIndexOf(',')>0)
+		{
+			AddressLine1=AddressLine1.substring(0, AddressLine1.lastIndexOf(','));
+			AddressLine2=billingAddress.substring(AddressLine1.length()+1, Math.min(billingAddress.length(), 100));
+		}
+		else if(AddressLine1.lastIndexOf(' ')>0)
+		{
+			AddressLine1=AddressLine1.substring(0, AddressLine1.lastIndexOf(' '));
+			AddressLine2=billingAddress.substring(AddressLine1.length()+1, Math.min(billingAddress.length(), 100));
+		}
+		
+	}
+	else
+	{
+		AddressLine1=billingAddress;
+	}
+	
+
+	if(Line==1) toReturn=TalendString.talendTrim(AddressLine1,' ',0);
+	else toReturn=StringHandling.LEFT(TalendString.talendTrim(AddressLine2,' ',0), 75);
+	
+	
+	return toReturn;
+	
+	
+
+}
+
+public static String titleCase(String text)
+{
+	String result = "";
+	
+	if((text.equals(null))||isFieldBlank(text)||Relational.ISNULL(text))
+	{
+		return "";
+	}
+	else{
+	 String input =  StringHandling.DOWNCASE(text.trim());
+   
+     char firstChar = input.charAt(0);
+     result = result + Character.toUpperCase(firstChar);
+     for (int i = 1; i < input.length(); i++) {
+         char currentChar = input.charAt(i);
+         char previousChar = input.charAt(i - 1);
+         if (previousChar == ' ') {
+             result = result + Character.toUpperCase(currentChar);
+         } else {
+             result = result + currentChar;
+         }
+     }
+    
+     
+     return result;}
+	
+}
+
+
+public static String escapeHTML(String s) {
+    StringBuilder out = new StringBuilder(Math.max(16, s.length()));
+    for (int i = 0; i < s.length(); i++) {
+        char c = s.charAt(i);
+        if (c > 127 || c == '"' || c == '\'' || c == '<' || c == '>' || c == '&') {
+            out.append("&#");
+            out.append((int) c);
+            out.append(';');
+        } else {
+            out.append(c);
+        }
+    }
+    return out.toString();
+}
+
+
+
+
+
+public static String Splitter(String InputString,String splitElement,int splitIndex) {
+
+	int ArrLen=0;	
+	if(InputString==null){return "";}
+	String Sarr[]=InputString.split("\\"+splitElement);
+	ArrLen=Sarr.length-1;
+		if (splitIndex>ArrLen ){
+				return "";
+			}
+		else{
+			return Sarr[splitIndex];
+			}
+    
+}
+
+public static String POBoxAddressFix(String Address){
+	
+	String Address2=Address.trim();
+	 String arr[] = Address2.split(" ", 2);
+	 String FirstWord=arr[0];
+	 if ("PO".equalsIgnoreCase(FirstWord))
+	 {
+		if(GetNthIndex(Address2, " ")<=3)
+		{
+			return Address2;
+		}
+		else{
+			String x[]=Address2.split(" ");
+			String S="";
+			for (int i=0;i<=x.length-1;i++){
+				if (i==3)
+				S=S+"~"+x[i];
+				else
+				S=S+" "+x[i];
+			}
+			return S;
+		}
+	 }
+	 else
+	 {
+	
+	return Address2.replace(" PO","~PO");
+	 }
+}
+
+public static int GetNthIndex(String s, String seperator)
+{
+	int size;
+	if(s==null||isFieldBlank(s))
+	{
+		return -1;
+	}
+	
+	String arr[]=s.split(seperator);
+	size=arr.length;
+	
+ return size;   
+}
+   
+
+}
+    
+
+    
+    
+

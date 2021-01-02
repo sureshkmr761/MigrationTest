@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="Default" xmi:id="_-omD4E0KEeuiAPYAKiDHYw" xmi:version="2.0">
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_subject" prompt="BrazilConnection_oauth2JwtFlow_subject?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD4U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2FlowType" prompt="BrazilConnection_oauth2FlowType?" promptNeeded="false" type="id_String" value="JWT_Flow" xmi:id="_-omD4k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_keyStorePassword" prompt="BrazilConnection_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" type="id_Password" value="" xmi:id="_-omD400KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth_clientId" prompt="BrazilConnection_oauth_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD5E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_endpoint" prompt="BrazilConnection_endpoint?" promptNeeded="false" type="id_String" value="https://login.salesforce.com/services/Soap/u/44.0" xmi:id="_-omD5U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_userPassword_userId" prompt="BrazilConnection_userPassword_userId?" promptNeeded="false" type="id_String" value="datamigration@informa.com.ubmorg" xmi:id="_-omD5k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_userPassword_password" prompt="BrazilConnection_userPassword_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:j2p9voI00FERiEoOi8oYblM28bV/UCERTDTy25e1u1iVUaVSdzYMiQ==" xmi:id="_-omD500KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_certificateAlias" prompt="BrazilConnection_oauth2JwtFlow_certificateAlias?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD6E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth_callbackHost" prompt="BrazilConnection_oauth_callbackHost?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD6U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth_callbackPort" prompt="BrazilConnection_oauth_callbackPort?" promptNeeded="false" type="id_Integer" value="" xmi:id="_-omD6k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_apiVersion" prompt="BrazilConnection_apiVersion?" promptNeeded="false" type="id_String" value="44.0" xmi:id="_-omD600KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_proxy_host" prompt="BrazilConnection_proxy_host?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD7E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_timeout" prompt="BrazilConnection_timeout?" promptNeeded="false" type="id_Integer" value="60000" xmi:id="_-omD7U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_proxy_userPassword_password" prompt="BrazilConnection_proxy_userPassword_password?" promptNeeded="false" type="id_Password" value="" xmi:id="_-omD7k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth_clientSecret" prompt="BrazilConnection_oauth_clientSecret?" promptNeeded="false" type="id_Password" value="" xmi:id="_-omD700KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_sessionDirectory" prompt="BrazilConnection_sessionDirectory?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD8E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_proxy_userPassword_userId" prompt="BrazilConnection_proxy_userPassword_userId?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD8U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_expirationTime" prompt="BrazilConnection_oauth2JwtFlow_expirationTime?" promptNeeded="false" type="id_Integer" value="" xmi:id="_-omD8k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_keyStore" prompt="BrazilConnection_oauth2JwtFlow_keyStore?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD800KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_clientId" prompt="BrazilConnection_clientId?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD9E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_proxy_port" prompt="BrazilConnection_proxy_port?" promptNeeded="false" type="id_Integer" value="" xmi:id="_-omD9U0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth_tokenFile" prompt="BrazilConnection_oauth_tokenFile?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD9k0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_loginType" prompt="BrazilConnection_loginType?" promptNeeded="false" type="id_String" value="Basic" xmi:id="_-omD900KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_userPassword_securityKey" prompt="BrazilConnection_userPassword_securityKey?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:y7oTX5PCjBkElM24Oi1VWnAUEERUIKbbwbFB6God2Hq3iOoUJxbrXYhJsWM9aFWsHGKfbQ==" xmi:id="_-omD-E0KEeuiAPYAKiDHYw"/>
+  <contextParameter comment="" name="BrazilConnection_oauth2JwtFlow_issuer" prompt="BrazilConnection_oauth2JwtFlow_issuer?" promptNeeded="false" type="id_String" value="" xmi:id="_-omD-U0KEeuiAPYAKiDHYw"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cfc3f8e2-75b0-41a1-a0bb-1b3d6f940b4c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0e77R9qMIvlbi3ZQO8LggVBRIpDhe6URM1s1jHvNfYlUWR1Q0v+UOk3fq4S3RnT9krRmWYRaQnsI&#13;
+OhJ0xUu8yQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aae90159-bd39-476f-b659-ec21bc929907"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A7uMmHH6+W0ry6OjhZHC1+5kg+65EOQSTNKjqeNc5nIHgCzHoOYgE6MiHEf0WkBL6tpf55Y5sfsm&#13;
+J9Ya4WRlpg==</DigestValue></Reference></SignedInfo><SignatureValue>ZAHBrKVaR4liIMOWbyI8siSeewFpT2B9+sC0gfw0qXXCCwEA9VEWh6uttgL3cX14cm8tuQYgQCrg&#13;
+ZE3ssZbNE+rrq9pY1PymetaadVzHbNleJGl5jdXURARPJD8JS7ZQub147nU2A7cRFpxYgrFCUTSe&#13;
+pN/PyU30CgWxX8C2Y3W/8rPsYM14VxEC3/UwiskXBrntFYf0jBJiZMe4KC7lSU4hr8WmW9Bs6JiL&#13;
+D/6jfeFnVQz3B0kV2YX/tu6iURXsE+utYlkylMAVP/CXyJXaKnfVGaXWfHjmnzvt8IF7B79utX0v&#13;
+T+fEYX046FLg0FKM5gRjdgFBLUZyJh2nHJZO9A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aae90159-bd39-476f-b659-ec21bc929907" Target="#_cfc3f8e2-75b0-41a1-a0bb-1b3d6f940b4c"><Timestamp>2021-01-02 14:58:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
